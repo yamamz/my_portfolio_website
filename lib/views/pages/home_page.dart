@@ -7,26 +7,23 @@ import '../widgets/home_widget.dart';
 import '../widgets/nav_bar.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  ScrollController _controller;
+  final ScrollController _controller = ScrollController();
   int _selectedNavbarItemIndex = 0;
   @override
   void initState() {
-    _controller = ScrollController();
-
     _controller.addListener(_scrollListener);
     super.initState();
   }
 
   _scrollListener() {
-    if (_controller.offset >= 0 &&
-        _controller.offset < MediaQuery.of(context).size.height) {
+    if (_controller.offset >= 0 && _controller.offset < MediaQuery.of(context).size.height) {
       setState(() {
         _selectedNavbarItemIndex = 0;
       });
@@ -45,8 +42,7 @@ class _HomePageState extends State<HomePage> {
         selectedNavbarIndex: _selectedNavbarItemIndex,
         onClick: (String positionWidget) {
           if (positionWidget == 'home') {
-            _controller.animateTo(20,
-                duration: Duration(milliseconds: 500), curve: Curves.easeIn);
+            _controller.animateTo(20, duration: Duration(milliseconds: 500), curve: Curves.easeIn);
           } else if (positionWidget == 'about') {
             _controller.animateTo(MediaQuery.of(context).size.height + 100,
                 duration: Duration(milliseconds: 500), curve: Curves.easeIn);

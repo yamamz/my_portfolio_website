@@ -9,7 +9,11 @@ class NavBarItem extends StatefulWidget {
   final int index;
   final Function() onClick;
   const NavBarItem(
-      {Key key, this.title, this.isSelected = false, this.index, this.onClick})
+      {Key? key,
+      required this.title,
+      this.isSelected = false,
+      required this.index,
+      required this.onClick})
       : super(key: key);
 
   @override
@@ -17,10 +21,9 @@ class NavBarItem extends StatefulWidget {
 }
 
 class _NavBarItemState extends State<NavBarItem> {
-  Color _bgColor;
+  Color _bgColor = Colors.transparent;
   @override
   void initState() {
-    _bgColor = Colors.transparent;
     super.initState();
   }
 
@@ -43,15 +46,13 @@ class _NavBarItemState extends State<NavBarItem> {
           },
           child: AnimatedContainer(
             curve: Curves.easeIn,
-            decoration: BoxDecoration(
-                color: _bgColor, borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(color: _bgColor, borderRadius: BorderRadius.circular(10)),
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             duration: Duration(milliseconds: 500),
             child: Text(
               widget.title,
-              style: TextStyle(
-                  color: widget.isSelected ? primaryColor : Colors.white,
-                  fontSize: 16),
+              style:
+                  TextStyle(color: widget.isSelected ? primaryColor : Colors.white, fontSize: 16),
             ),
           ),
         ),
@@ -72,15 +73,13 @@ class _NavBarItemState extends State<NavBarItem> {
           },
           child: AnimatedContainer(
             curve: Curves.easeIn,
-            decoration: BoxDecoration(
-                color: _bgColor, borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(color: _bgColor, borderRadius: BorderRadius.circular(10)),
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             duration: Duration(milliseconds: 500),
             child: Text(
               widget.title,
-              style: TextStyle(
-                  color: widget.isSelected ? primaryColor : Colors.white,
-                  fontSize: 16),
+              style:
+                  TextStyle(color: widget.isSelected ? primaryColor : Colors.white, fontSize: 16),
             ),
           ),
         ),
@@ -102,15 +101,13 @@ class _NavBarItemState extends State<NavBarItem> {
           child: AnimatedContainer(
             width: MediaQuery.of(context).size.width,
             curve: Curves.easeIn,
-            decoration: BoxDecoration(
-                color: _bgColor, borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(color: _bgColor, borderRadius: BorderRadius.circular(10)),
             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
             duration: Duration(milliseconds: 500),
             child: Text(
               widget.title,
-              style: TextStyle(
-                  color: widget.isSelected ? primaryColor : Colors.white,
-                  fontSize: 12),
+              style:
+                  TextStyle(color: widget.isSelected ? primaryColor : Colors.white, fontSize: 12),
             ),
           ),
         ),

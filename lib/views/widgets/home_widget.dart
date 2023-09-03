@@ -6,7 +6,7 @@ import 'dart:html' as html;
 import 'package:my_portfolio_website/views/widgets/responsive_widget.dart';
 
 class HomeWidget extends StatelessWidget {
-  const HomeWidget({Key key}) : super(key: key);
+  const HomeWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class HomeWidget extends StatelessWidget {
 }
 
 class _SmallHome extends StatelessWidget {
-  const _SmallHome({Key key}) : super(key: key);
+  const _SmallHome({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -61,9 +61,7 @@ class _SmallHome extends StatelessWidget {
                   ),
                   child: Text('Mobile App Developer',
                       style: TextStyle(
-                          fontSize: 14,
-                          color: secondaryColor,
-                          fontWeight: FontWeight.w200)),
+                          fontSize: 14, color: secondaryColor, fontWeight: FontWeight.w200)),
                 ),
                 SizedBox(
                   height: 8,
@@ -76,9 +74,7 @@ class _SmallHome extends StatelessWidget {
                         'I\'m Passionate in different tech stack, most specifically in mobile and web development technology. Has also wide knowledge in different frontend technology such as javascript html and css. Also interested in backend technology in different tech stack. Strong background in native android development and cross platform framework for mobile development.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.white70,
-                            fontWeight: FontWeight.w200)),
+                            fontSize: 12, color: Colors.white70, fontWeight: FontWeight.w200)),
                   ),
                 ),
                 SizedBox(
@@ -100,8 +96,7 @@ class _SmallHome extends StatelessWidget {
                           size: size2,
                         ),
                         onPressed: () {
-                          html.window
-                              .open("https://www.github.com/yamamz", 'github');
+                          html.window.open("https://www.github.com/yamamz", 'github');
                         },
                         iconSize: size2,
                       ),
@@ -112,9 +107,7 @@ class _SmallHome extends StatelessWidget {
                           size: size2,
                         ),
                         onPressed: () {
-                          html.window.open(
-                              "https://www.facebook.com/raymundo.melecio",
-                              'facebook');
+                          html.window.open("https://www.facebook.com/raymundo.melecio", 'facebook');
                         },
                         iconSize: size2,
                       ),
@@ -125,8 +118,7 @@ class _SmallHome extends StatelessWidget {
                           size: size2,
                         ),
                         onPressed: () {
-                          html.window.open(
-                              "https://twitter.com/MelecioRaymundo", 'twitter');
+                          html.window.open("https://twitter.com/MelecioRaymundo", 'twitter');
                         },
                         iconSize: size2,
                       ),
@@ -146,9 +138,8 @@ class _SmallHome extends StatelessWidget {
                           size: size2,
                         ),
                         onPressed: () {
-                          html.window.open(
-                              "https://www.instagram.com/raymundomelecio/",
-                              'instagram');
+                          html.window
+                              .open("https://www.instagram.com/raymundomelecio/", 'instagram');
                         },
                         iconSize: size2,
                       ),
@@ -176,7 +167,7 @@ class _SmallHome extends StatelessWidget {
 }
 
 class _LargeHome extends StatelessWidget {
-  const _LargeHome({Key key}) : super(key: key);
+  const _LargeHome({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -225,9 +216,7 @@ class _LargeHome extends StatelessWidget {
                 child: Text(
                     'I\'m Passionate in different tech stack, most specifically in mobile and web development technology.\nHas also wide knowledge in different frontend technology such as javascript html and css.\nAlso interested in backend technology in different tech stack.\nStrong background in native android development and cross platform framework for mobile development.',
                     style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.white70,
-                        fontWeight: FontWeight.w200)),
+                        fontSize: 18, color: Colors.white70, fontWeight: FontWeight.w200)),
               ),
             ),
             SizedBox(
@@ -246,9 +235,7 @@ class _LargeHome extends StatelessWidget {
                       ),
                       child: Text('Mobile App Developer',
                           style: TextStyle(
-                              fontSize: 24,
-                              color: secondaryColor,
-                              fontWeight: FontWeight.w200)),
+                              fontSize: 24, color: secondaryColor, fontWeight: FontWeight.w200)),
                     ),
                     SizedBox(
                       width: 20,
@@ -260,8 +247,7 @@ class _LargeHome extends StatelessWidget {
                         size: 40,
                       ),
                       onPressed: () {
-                        html.window
-                            .open("https://www.github.com/yamamz", 'github');
+                        html.window.open("https://www.github.com/yamamz", 'github');
                       },
                       iconSize: 60,
                     ),
@@ -272,9 +258,7 @@ class _LargeHome extends StatelessWidget {
                         size: 40,
                       ),
                       onPressed: () {
-                        html.window.open(
-                            "https://www.facebook.com/raymundo.melecio",
-                            'facebook');
+                        html.window.open("https://www.facebook.com/raymundo.melecio", 'facebook');
                       },
                       iconSize: 60,
                     ),
@@ -285,8 +269,7 @@ class _LargeHome extends StatelessWidget {
                         size: 40,
                       ),
                       onPressed: () {
-                        html.window.open(
-                            "https://twitter.com/MelecioRaymundo", 'twitter');
+                        html.window.open("https://twitter.com/MelecioRaymundo", 'twitter');
                       },
                       iconSize: 60,
                     ),
@@ -306,9 +289,7 @@ class _LargeHome extends StatelessWidget {
                         size: 40,
                       ),
                       onPressed: () {
-                        html.window.open(
-                            "https://www.instagram.com/raymundomelecio/",
-                            'instagram');
+                        html.window.open("https://www.instagram.com/raymundomelecio/", 'instagram');
                       },
                       iconSize: 60,
                     ),

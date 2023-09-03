@@ -4,7 +4,7 @@ import 'package:my_portfolio_website/views/widgets/nav_bar_item.dart';
 
 class Draweritems extends StatefulWidget implements PreferredSizeWidget {
   final Function(String positionWidget) onClick;
-  Draweritems({Key key, this.onClick}) : super(key: key);
+  Draweritems({Key? key, required this.onClick}) : super(key: key);
 
   @override
   _DraweritemsState createState() => _DraweritemsState();

@@ -6,7 +6,7 @@ import 'package:my_portfolio_website/views/widgets/responsive_widget.dart';
 class NavBar extends StatefulWidget implements PreferredSizeWidget {
   final int selectedNavbarIndex;
   final Function(String positionWidget) onClick;
-  NavBar({Key key, this.onClick, this.selectedNavbarIndex}) : super(key: key);
+  NavBar({Key? key, required this.onClick, required this.selectedNavbarIndex}) : super(key: key);
 
   @override
   _NavBarState createState() => _NavBarState();
@@ -16,7 +16,7 @@ class NavBar extends StatefulWidget implements PreferredSizeWidget {
 }
 
 class _NavBarState extends State<NavBar> {
-  int _selectedNavbarIndex;
+  int? _selectedNavbarIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -46,10 +46,7 @@ class _NavBarState extends State<NavBar> {
           children: [
             Text(
               'Yamamz',
-              style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
             ),
             Row(
               children: <Widget>[

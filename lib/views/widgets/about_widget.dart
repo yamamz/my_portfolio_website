@@ -13,11 +13,10 @@ const Color webDevIcColor = Colors.green;
 const Color backendDevIcColor = Colors.white70;
 const String strMobileSkills =
     'Native android development, Kotlin, Java, Dart, Flutter, Android Studio';
-const String strWebSkills =
-    'Vanilla Javascript, css, html, JQuery, Vue, rest api, Json';
+const String strWebSkills = 'Vanilla Javascript, css, html, JQuery, Vue, rest api, Json';
 
 class AboutWidget extends StatelessWidget {
-  const AboutWidget({Key key}) : super(key: key);
+  const AboutWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -78,9 +77,7 @@ class AboutWidget extends StatelessWidget {
                     ),
                     child: Text('download my resume',
                         style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w200)),
+                            fontSize: 16, color: Colors.white, fontWeight: FontWeight.w200)),
                   ),
                 ),
               ],
@@ -93,7 +90,7 @@ class AboutWidget extends StatelessWidget {
 }
 
 class _LargeAboutContent extends StatelessWidget {
-  const _LargeAboutContent({Key key}) : super(key: key);
+  const _LargeAboutContent({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -218,7 +215,7 @@ class _LargeAboutContent extends StatelessWidget {
 }
 
 class _MediumAboutContent extends StatelessWidget {
-  const _MediumAboutContent({Key key}) : super(key: key);
+  const _MediumAboutContent({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -343,7 +340,7 @@ class _MediumAboutContent extends StatelessWidget {
 }
 
 class _SmallAboutContent extends StatelessWidget {
-  const _SmallAboutContent({Key key}) : super(key: key);
+  const _SmallAboutContent({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

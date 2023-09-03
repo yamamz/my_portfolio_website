@@ -5,7 +5,7 @@ import 'package:my_portfolio_website/constant/color_constant.dart';
 import 'dart:html' as html;
 
 class SmallScreen extends StatelessWidget {
-  const SmallScreen({Key key}) : super(key: key);
+  const SmallScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -53,9 +53,7 @@ class SmallScreen extends StatelessWidget {
                   child: Text(
                       'I\'m Passionate in different tech stack, most specifically in mobile and web development technology.\nHas also wide knowledge in different frontend technology such as javascript html and css.\nAlso interested in backend technology in different tech stack.\nStrong background in native android development and cross platform framework for mobile development.',
                       style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white70,
-                          fontWeight: FontWeight.w200)),
+                          fontSize: 18, color: Colors.white70, fontWeight: FontWeight.w200)),
                 ),
               ),
               SizedBox(
@@ -74,9 +72,7 @@ class SmallScreen extends StatelessWidget {
                         ),
                         child: Text('Mobile App Developer',
                             style: TextStyle(
-                                fontSize: 24,
-                                color: secondaryColor,
-                                fontWeight: FontWeight.w200)),
+                                fontSize: 24, color: secondaryColor, fontWeight: FontWeight.w200)),
                       ),
                       SizedBox(
                         width: 20,
@@ -88,9 +84,7 @@ class SmallScreen extends StatelessWidget {
                           size: 40,
                         ),
                         onPressed: () {
-                          html.window.open(
-                              "https://www.facebook.com/raymundo.melecio",
-                              'facebook');
+                          html.window.open("https://www.facebook.com/raymundo.melecio", 'facebook');
                         },
                         iconSize: 60,
                       ),
@@ -101,8 +95,7 @@ class SmallScreen extends StatelessWidget {
                           size: 40,
                         ),
                         onPressed: () {
-                          html.window.open(
-                              "https://twitter.com/MelecioRaymundo", 'twitter');
+                          html.window.open("https://twitter.com/MelecioRaymundo", 'twitter');
                         },
                         iconSize: 60,
                       ),
@@ -122,9 +115,8 @@ class SmallScreen extends StatelessWidget {
                           size: 40,
                         ),
                         onPressed: () {
-                          html.window.open(
-                              "https://www.instagram.com/raymundomelecio/",
-                              'instagram');
+                          html.window
+                              .open("https://www.instagram.com/raymundomelecio/", 'instagram');
                         },
                         iconSize: 60,
                       ),
